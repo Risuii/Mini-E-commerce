@@ -104,7 +104,7 @@ func ReadOne(w http.ResponseWriter, r *http.Request) {
 	helpers.ResponseJSON(w, http.StatusOK, user)
 }
 
-func ReadAnother(w http.ResponseWriter, r *http.Request) {
+func ReadAnotherProfile(w http.ResponseWriter, r *http.Request) {
 	// get id from params
 	params := mux.Vars(r)
 	id := params["id"]
@@ -284,7 +284,7 @@ func Logout(w http.ResponseWriter, r *http.Request) {
 	helpers.ResponseJSON(w, http.StatusOK, response)
 }
 
-func TutupAkun(w http.ResponseWriter, r *http.Request) {
+func DeleteProfile(w http.ResponseWriter, r *http.Request) {
 	// get Id from token
 
 	c, err := r.Cookie("token")
