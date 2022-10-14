@@ -5,21 +5,9 @@ import (
 	"project-golang/routes"
 )
 
+// var DB *gorm.DB
+
 func main() {
 	models.ConnectionDatabase()
-
 	routes.Routing()
-
-	// index.RoutingIndex()
-	// auth.RoutingAuth()
-	// user.RoutingUser()
-	// toko.RoutingToko()
-	// productOwner.RoutingProductOwner()
-	// payment.RoutingPayment()
-
-	// fmt.Println("PORT: 8080")
-
-	// r := mux.NewRouter()
-
-	// log.Fatal(http.ListenAndServe(":8080", r))
 }
