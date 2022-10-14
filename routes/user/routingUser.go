@@ -14,5 +14,5 @@ func RoutingUser() {
 
 	api.HandleFunc("/update", auth.Update).Methods("PATCH")
 	api.HandleFunc("/profile", auth.ReadOne).Methods("GET")
-	api.HandleFunc("/delete-akun", auth.TutupAkun).Methods("DELETE")
+	api.HandleFunc("/delete-akun", auth.DeleteProfile).Methods("DELETE")
 }
